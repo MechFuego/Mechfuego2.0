@@ -60,6 +60,46 @@ nav{position:fixed;top:0;left:0;right:0;z-index:20;background:rgba(5,11,20,.72);
     position:relative;
     z-index:2;
 }
+@media (max-width: 768px) {
+
+    .hero {
+        position: relative;
+        min-height: 100vh;
+        overflow: hidden;
+        padding-top: 90px;
+    }
+
+    .hero-video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+        object-position: center center;
+
+        z-index: 0;
+    }
+
+    .hero-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+
+        z-index: 1;
+    }
+
+    .hero-content {
+        position: relative;
+        z-index: 2;
+    }
+}
 .college-name{font-size:1.15rem;font-weight:600;letter-spacing:1.5px;color:#eef6ff;margin-bottom:12px;text-transform:uppercase}
 .eyebrow{display:inline-flex;padding:8px 14px;border:1px solid var(--line);border-radius:999px;background:rgba(15,31,49,.7);color:var(--cyan);font-size:.82rem;font-weight:700;letter-spacing:1.2px;text-transform:uppercase}
 h1{font-family:Orbitron,sans-serif;font-size:clamp(3rem,9vw,7.2rem);line-height:.95;margin:24px 0 18px;text-transform:uppercase;letter-spacing:3px}h1 .hot{color:var(--orange)}
