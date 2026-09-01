@@ -116,6 +116,25 @@ h2{font-family:Orbitron,sans-serif;font-size:clamp(1.8rem,4vw,3rem);margin-top:8
 footer{border-top:1px solid var(--line);padding:35px 0 25px;color:var(--muted);font-size:.85rem}.footer-row{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
 .developer-credit{text-align:center;margin-top:18px;padding-top:18px;border-top:1px solid var(--line);color:var(--muted);font-size:.72rem;letter-spacing:.4px;line-height:1.7}.developer-credit strong{color:#cbd9e7;font-weight:600}.developer-credit span{display:block;font-size:.68rem;opacity:.85}
 @media(max-width:760px){.links{display:none}.about-grid,.events{grid-template-columns:1fr}.hero{min-height:auto;padding-top:145px}.countdown{grid-template-columns:repeat(2,1fr)}.ghost{margin-left:0;margin-top:10px}.college-name{font-size:.9rem}}
+.onspot-badge{
+    display:inline-block;
+    margin:10px auto 15px;
+    padding:10px 18px;
+    border:1px solid rgba(255,107,44,.45);
+    border-radius:999px;
+    background:rgba(255,107,44,.12);
+    color:#ff934e;
+    font-weight:800;
+    font-size:.85rem;
+    letter-spacing:.8px;
+    box-shadow:0 0 20px rgba(255,107,44,.12);
+}
+
+.register-note{
+    color:var(--muted);
+    max-width:650px;
+    margin:0 auto 25px;
+}  
 </style>
 </head>
 <body>
@@ -153,7 +172,7 @@ footer{border-top:1px solid var(--line);padding:35px 0 25px;color:var(--muted);f
 
 <section id="schedule"><div class="container"><div class="section-head"><div class="kicker">03 / Schedule</div><h2>Event day.</h2><p id="scheduleIntro"></p></div><div class="card"><p><strong id="scheduleDate"></strong> — <span id="scheduleVenue"></span></p><div id="scheduleText" style="margin-top:18px;color:var(--muted)"></div></div></div></section>
 
-<section id="register"><div class="container"><div class="register"><div class="kicker">04 / Registration</div><h2>Ready to enter the arena?</h2><p>Registration fee: <strong id="registerFee" style="color:white"></strong>. Click below to open the official Google Form.</p><a class="cta" id="registerButton" href="#" target="_blank" rel="noopener">REGISTER FOR MECH FUEGO 2.0 →</a></div></div></section>
+<section id="register"><div class="container"><div class="register"><div class="kicker">04 / Registration</div><h2>Ready to enter the arena?</h2><p>Registration fee: <strong id="registerFee" style="color:white"></strong>.</p>  <div class="onspot-badge">     ⚡ ON-SPOT REGISTRATION AVAILABLE </div>  <p class="register-note">     Online registration is available through the Google Form below.     Participants can also register at the venue on the event day. </p><a class="cta" id="registerButton" href="#" target="_blank" rel="noopener">REGISTER FOR MECH FUEGO 2.0 →</a></div></div></section>
 
 <section id="contact"><div class="container"><div class="section-head"><div class="kicker">05 / Contact</div><h2>See you at the hall.</h2><p id="college"></p></div><div class="card"><p id="contacts" style="color:var(--muted);white-space:pre-line"></p></div></div></section>
 </main>
@@ -167,7 +186,7 @@ department:"Mechanical Engineering",
 college:"P.A. College of Engineering and Technology",
 date:"15/09/2026",
 dateISO:"2026-09-15T09:00:00+05:30",
-venue:"Auditorium",
+venue:"IT seminar Hall",
 fee:"₹200 per Head",
 prize:"Cash Prizes",
 tagline:"Where mechanical minds meet. A modern technical symposium featuring challenges, competitions, creativity and cash prizes.",
